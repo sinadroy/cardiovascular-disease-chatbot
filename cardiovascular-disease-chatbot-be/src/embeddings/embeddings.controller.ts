@@ -1,5 +1,18 @@
-import { Controller, Post, Body } from '@nestjs/common';
-import { ApiTags, ApiOperation, ApiResponse, ApiBody } from '@nestjs/swagger';
+import {
+  Controller,
+  Post,
+  Body,
+  Get,
+  Query,
+  BadRequestException,
+} from '@nestjs/common';
+import {
+  ApiTags,
+  ApiOperation,
+  ApiResponse,
+  ApiBody,
+  ApiQuery,
+} from '@nestjs/swagger';
 import { EmbeddingsService } from './embeddings.service';
 import { DiseaseSymptomDto } from './dto/disease-symptom.dto';
 
@@ -62,5 +75,64 @@ export class EmbeddingsController {
     processed: number;
   }> {
     return this.embeddingsService.processDiseasesSymptoms(diseaseSymptoms);
+  }
+
+  @Get('vector-search')
+  @ApiOperation({
+    summary: 'Search for similar diseases',
+    description:
+      'Finds similar diseases based on a query using vector similarity search',
+  })
+  @ApiQuery({
+    name: 'q',
+    description: 'Search query describing symptoms or disease conditions',
+    example: 'chest pain and shortness of breath',
+    required: true,
+  })
+  @ApiQuery({
+    name: 'limit',
+    description: 'Number of similar results to return (default: 5)',
+    example: 5,
+    required: false,
+    type: 'number',
+  })
+  @ApiResponse({
+    status: 200,
+    description: 'Successfully found similar diseases',
+    schema: {
+      type: 'array',
+      items: {
+        type: 'object',
+        properties: {
+          disease: {
+            type: 'string',
+            description: 'Name of the disease',
+          },
+          symptom: {
+            type: 'string',
+            description: 'Description of symptoms',
+          },
+          _id: {
+            type: 'string',
+            description: 'Database ID',
+          },
+        },
+      },
+    },
+  })
+  @ApiResponse({
+    status: 400,
+    description: 'Missing or invalid query parameter',
+  })
+  async searchSimilarDiseases(
+    @Query('q') query: string,
+    @Query('limit') limit?: number,
+  ) {
+    if (!query) {
+      throw new BadRequestException('Query parameter "q" is required');
+    }
+
+    const topK = limit && limit > 0 ? Math.min(limit, 20) : 5; // Cap at 20 results
+    return this.embeddingsService.findSimilarChunkEmbedding(query, topK);
   }
 }

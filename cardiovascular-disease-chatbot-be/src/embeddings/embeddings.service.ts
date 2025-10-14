@@ -121,4 +121,28 @@ export class EmbeddingsService {
       throw new Error(`Failed to save embeddings to Atlas: ${errorMessage}`);
     }
   }
+
+  async findSimilarChunkEmbedding(
+    query: string,
+    topK = 5,
+  ): Promise<DiseaseEmbedding[]> {
+    this.logger.log(`Finding top ${topK} similar embeddings in the database`);
+
+    const queryEmbedding = await this.createEmbedding(query);
+
+    // Fetch all embeddings from the database
+    const allEmbeddings = await this.diseaseEmbeddingModel.aggregate([
+      {
+        $vectorSearch: {
+          queryVector: queryEmbedding,
+          path: 'embedding',
+          numCandidates: 100, // Number of candidates to consider for similarity search
+          limit: topK,
+          index: 'default', // Ensure this matches your index name
+        },
+      },
+    ]);
+
+    return allEmbeddings;
+  }
 }
