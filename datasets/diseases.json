@@ -1,0 +1,202 @@
+[
+  {
+    "disease": "Coronary Artery Disease (CAD)",
+    "symptom": "Chest pain (angina), shortness of breath, fatigue, heart attack."
+  },
+  {
+    "disease": "Hypertension (High Blood Pressure)",
+    "symptom": "Often asymptomatic; severe cases may cause headaches, dizziness, or nosebleeds."
+  },
+  {
+    "disease": "Myocardial Infarction (Heart Attack)",
+    "symptom": "Severe chest pain, pain in the left arm, jaw, or back, shortness of breath, sweating, nausea."
+  },
+  {
+    "disease": "Stroke",
+    "symptom": "Sudden numbness or weakness in the face, arm, or leg (especially on one side), confusion, trouble speaking or seeing, severe headache."
+  },
+  {
+    "disease": "Heart Failure",
+    "symptom": "Shortness of breath, fatigue, weakness, swelling (edema) in legs, ankles, and feet, rapid or irregular heartbeat."
+  },
+  {
+    "disease": "Arrhythmia",
+    "symptom": "Fluttering in the chest, racing heartbeat (tachycardia), slow heartbeat (bradycardia), chest pain, dizziness."
+  },
+  {
+    "disease": "Atrial Fibrillation (AFib)",
+    "symptom": "Irregular and often rapid heart rate, palpitations, weakness, shortness of breath, lightheadedness."
+  },
+  {
+    "disease": "Peripheral Artery Disease (PAD)",
+    "symptom": "Painful cramping in hip, thigh, or calf muscles after activity (claudication), leg numbness, coldness in lower leg or foot."
+  },
+  {
+    "disease": "Aortic Aneurysm",
+    "symptom": "Often asymptomatic until rupture; deep, constant pain in abdomen or back, a pulsating feeling near the navel."
+  },
+  {
+    "disease": "Cardiomyopathy",
+    "symptom": "Breathlessness with exertion or even at rest, swelling of the legs, ankles and feet, fatigue, irregular heartbeats."
+  },
+  {
+    "disease": "Rheumatic Heart Disease",
+    "symptom": "Fever, painful and tender joints, shortness of breath, chest pain, fatigue."
+  },
+  {
+    "disease": "Congenital Heart Defect",
+    "symptom": "Varies widely; may include abnormal heart rhythms, blue-tinged skin (cyanosis), shortness of breath, swelling."
+  },
+  {
+    "disease": "Valvular Heart Disease",
+    "symptom": "Heart murmur, shortness of breath, fatigue, chest pain, dizziness, fainting."
+  },
+  {
+    "disease": "Deep Vein Thrombosis (DVT)",
+    "symptom": "Swelling in the affected leg, pain or tenderness in the leg, a feeling of warmth, red or discolored skin."
+  },
+  {
+    "disease": "Pulmonary Embolism",
+    "symptom": "Sudden shortness of breath, sharp chest pain that is worse with a deep breath, cough that may produce bloody sputum."
+  },
+  {
+    "disease": "Angina Pectoris",
+    "symptom": "Squeezing, pressure, heaviness, tightness, or pain in the chest, often triggered by physical activity or stress."
+  },
+  {
+    "disease": "Bradycardia",
+    "symptom": "Slow heart rate (less than 60 bpm), fainting, dizziness, fatigue, shortness of breath."
+  },
+  {
+    "disease": "Tachycardia",
+    "symptom": "Fast heart rate (more than 100 bpm), shortness of breath, lightheadedness, rapid pulse, heart palpitations."
+  },
+  {
+    "disease": "Ventricular Fibrillation",
+    "symptom": "Sudden collapse, loss of consciousness, no pulse. It is a medical emergency."
+  },
+  {
+    "disease": "Endocarditis",
+    "symptom": "Fever, chills, fatigue, aching joints and muscles, night sweats, a new or changed heart murmur."
+  },
+  {
+    "disease": "Myocarditis",
+    "symptom": "Chest pain, rapid or abnormal heart rhythms, shortness of breath at rest or during activity, fatigue."
+  },
+  {
+    "disease": "Pericarditis",
+    "symptom": "Sharp, stabbing chest pain that may feel better when sitting up and leaning forward; fever, weakness."
+  },
+  {
+    "disease": "Atherosclerosis",
+    "symptom": "Depends on which arteries are affected; can lead to angina, claudication, or symptoms of a stroke or heart attack."
+  },
+  {
+    "disease": "Hyperlipidemia (High Cholesterol)",
+    "symptom": "Generally no symptoms; detected by a blood test. Can lead to atherosclerosis."
+  },
+  {
+    "disease": "Marfan Syndrome",
+    "symptom": "Tall, thin build, long arms, legs, and fingers. Heart problems include risk of aortic aneurysm and valve malformations."
+  },
+  {
+    "disease": "Kawasaki Disease",
+    "symptom": "High fever, rash, swelling of hands and feet, irritation and redness of the eyes, inflammation of the mouth, lips, and throat."
+  },
+  {
+    "disease": "Brugada Syndrome",
+    "symptom": "Irregular heartbeats, fainting, seizures. Often occurs during rest or sleep. Can cause sudden death."
+  },
+  {
+    "disease": "Long QT Syndrome (LQTS)",
+    "symptom": "Fainting, seizures, and sudden death, often triggered by exercise or stress."
+  },
+  {
+    "disease": "Cardiogenic Shock",
+    "symptom": "Rapid breathing, severe shortness of breath, sudden rapid heartbeat, loss of consciousness, weak pulse, low blood pressure."
+  },
+  {
+    "disease": "Aortic Stenosis",
+    "symptom": "Chest pain, feeling faint or dizzy with activity, shortness of breath, fatigue."
+  },
+  {
+    "disease": "Mitral Valve Prolapse",
+    "symptom": "Often asymptomatic; may cause palpitations, shortness of breath, chest pain, fatigue."
+  },
+  {
+    "disease": "Mitral Regurgitation",
+    "symptom": "Heart murmur, shortness of breath, fatigue, lightheadedness, swelling in feet or ankles."
+  },
+  {
+    "disease": "Aortic Regurgitation",
+    "symptom": "Fatigue and weakness with activity, shortness of breath, fainting, irregular pulse."
+  },
+  {
+    "disease": "Tricuspid Regurgitation",
+    "symptom": "Active pulsing in the neck veins, fatigue, swelling in the abdomen, legs, or feet."
+  },
+  {
+    "disease": "Pulmonary Stenosis",
+    "symptom": "Heart murmur, shortness of breath, chest pain, fainting, fatigue."
+  },
+  {
+    "disease": "Patent Foramen Ovale (PFO)",
+    "symptom": "Usually no symptoms; in some cases, it's linked to migraine with aura and stroke."
+  },
+  {
+    "disease": "Atrial Septal Defect (ASD)",
+    "symptom": "Shortness of breath, fatigue, swelling of legs, feet or abdomen, heart palpitations."
+  },
+  {
+    "disease": "Ventricular Septal Defect (VSD)",
+    "symptom": "Poor eating, failure to thrive (in infants), fast breathing or breathlessness, easy tiring."
+  },
+  {
+    "disease": "Tetralogy of Fallot",
+    "symptom": "Bluish coloration of the skin (cyanosis), shortness of breath and rapid breathing, especially during feeding or exercise."
+  },
+  {
+    "disease": "Transposition of the Great Arteries",
+    "symptom": "Blue color of the skin (cyanosis), shortness of breath, poor feeding, weak pulse. Appears at birth or very soon after."
+  },
+  {
+    "disease": "Hypoplastic Left Heart Syndrome",
+    "symptom": "Cyanosis, rapid, difficult breathing, poor feeding, cold hands and feet. Appears within hours of birth."
+  },
+  {
+    "disease": "Takayasu's Arteritis",
+    "symptom": "Fatigue, unintentional weight loss, general aches and pains, dizziness, high blood pressure, weak pulse in the arms."
+  },
+  {
+    "disease": "Giant Cell Arteritis",
+    "symptom": "Persistent headache, scalp tenderness, jaw pain when chewing, fever, fatigue, vision problems."
+  },
+  {
+    "disease": "Thromboangiitis Obliterans (Buerger's Disease)",
+    "symptom": "Pain in hands and feet, which may be severe; pale, red, or bluish hands or feet; cold hands or feet."
+  },
+  {
+    "disease": "Raynaud's Phenomenon",
+    "symptom": "Fingers and toes turn white, then blue, and feel numb and cold in response to cold temperatures or stress."
+  },
+  {
+    "disease": "Postural Orthostatic Tachycardia Syndrome (POTS)",
+    "symptom": "Lightheadedness, fainting, and an uncomfortable, rapid increase in heartbeat upon standing up."
+  },
+  {
+    "disease": "Cardiac Tamponade",
+    "symptom": "Low blood pressure, distended neck veins, anxiety, chest pain radiating to neck, shoulders, or back, trouble breathing."
+  },
+  {
+    "disease": "Ischemic Cardiomyopathy",
+    "symptom": "Chest pain and pressure (angina), shortness of breath, dizziness, fainting, swelling in legs and feet."
+  },
+  {
+    "disease": "Dilated Cardiomyopathy",
+    "symptom": "Fatigue, shortness of breath, reduced ability to exercise, swelling in legs, ankles, feet, and abdomen."
+  },
+  {
+    "disease": "Hypertrophic Cardiomyopathy (HCM)",
+    "symptom": "Shortness of breath, chest pain (especially with exercise), fainting, sensation of rapid, fluttering heartbeats (palpitations)."
+  }
+]

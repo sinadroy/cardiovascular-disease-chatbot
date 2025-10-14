@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+
+# Coverage reports
+coverage/
+
+# Configuration files
+eslint.config.mjs
+jest.config.js
+*.config.js
+
+# Environment files
+.env*
+
+# Logs
+*.log
