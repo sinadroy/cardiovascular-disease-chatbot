@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
 import { EmbeddingsModule } from './embeddings/embeddings.module';
+import { ChatbotModule } from './chatbot/chatbot.module';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { EmbeddingsModule } from './embeddings/embeddings.module';
       inject: [ConfigService],
     }),
     EmbeddingsModule,
+    ChatbotModule,
   ],
   controllers: [],
   providers: [],

@@ -15,5 +15,6 @@ import {
   ],
   controllers: [EmbeddingsController],
   providers: [EmbeddingsService],
+  exports: [EmbeddingsService],
 })
 export class EmbeddingsModule {}

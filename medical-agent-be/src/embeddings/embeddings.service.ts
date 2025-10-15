@@ -125,7 +125,7 @@ export class EmbeddingsService {
   async findSimilarChunkEmbedding(
     query: string,
     topK = 5,
-  ): Promise<DiseaseEmbedding[]> {
+  ): Promise<Array<{ disease: string; symptom: string }>> {
     this.logger.log(`Finding top ${topK} similar embeddings in the database`);
 
     const queryEmbedding = await this.createEmbedding(query);
@@ -143,6 +143,6 @@ export class EmbeddingsService {
       },
     ]);
 
-    return allEmbeddings;
+    return allEmbeddings as Array<{ disease: string; symptom: string }>;
   }
 }

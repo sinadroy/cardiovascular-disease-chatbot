@@ -17,10 +17,8 @@ async function bootstrap() {
 
   // Swagger configuration
   const config = new DocumentBuilder()
-    .setTitle('Cardiovascular Disease Chatbot API')
-    .setDescription(
-      'API for cardiovascular disease chatbot with disease and symptom management',
-    )
+    .setTitle('Medical Agent API')
+    .setDescription('API for medical agent with disease and symptom management')
     .setVersion('1.0')
     .build();
 
